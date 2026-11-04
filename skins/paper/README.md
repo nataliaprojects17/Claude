@@ -35,11 +35,19 @@ Poi riavvia e scegli la skin con `/skin paper`.
 
 ## 3. Il tema di Claude Code
 
-In `~/.claude/settings.json` finisce questa riga.
+`claude-theme-paper.json` va copiato in `~/.claude/themes/paper.json`, con quel nome, perche'
+e' il nome del file che l'impostazione cerca. Poi in `~/.claude/settings.json` va questa riga.
 
 ```json
 "theme": "custom:paper"
 ```
 
-Non serve scriverla a mano, perche' la scrive `/skin` quando scegli la skin. Scritta prima che
-il mod esista, punta a un tema che non si risolve.
+Questo strato colora l'interfaccia di Claude Code e non quella del mod, cioe' il bordo del
+prompt, la fascia dietro i messaggi, lo spinner, i colori del diff e le richieste di permesso.
+
+## Paper sta in tre file perche' i renderer sono tre
+
+Il tema di Claude Code, la skin del mod e lo schema del terminale non si parlano. Alcuni
+colori compaiono in piu' di un file, per esempio `#29251C` del testo e `#F3EACD` della riga
+alternata, e cambiandone uno gli altri restano indietro. Quando ritocchi la tavolozza,
+ritoccala in tutti e tre.
