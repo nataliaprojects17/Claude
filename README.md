@@ -1,7 +1,7 @@
 # Claude Code skills and mods
 
-Two writing skills and thirteen mods for Claude Code, kept here so they can be installed on
-another machine.
+Two writing skills, thirteen mods and a status line for Claude Code, kept here so they can be
+installed on another machine.
 
 A skill is a set of instructions Claude reads when a task matches it. A mod changes the
 interface itself, drawing panes, bands above the prompt and buttons, through the plugin
@@ -84,3 +84,13 @@ They are left out on purpose. The plugin hook API is early access and can change
 releases, so a copy committed here would go stale and would describe a different API from
 the one on the machine running it. The declarations in use when these mods were written came
 from Claude Code 2.1.296.
+
+## The status line
+
+`statusline/` holds the two line status line that sits under the prompt, with the model and
+its effort, the folder and the branch on the first line, and the context fill, the cache
+countdown and the two usage windows on the second.
+
+It does not install from the marketplace, because a status line is a command named in
+`settings.json` rather than a plugin. Copy the script across and point the setting at it, as
+`statusline/README.md` spells out.
