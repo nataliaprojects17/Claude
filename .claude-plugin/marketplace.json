@@ -1,0 +1,60 @@
+{
+  "name": "local-mods",
+  "owner": {
+    "name": "Natalija Zlatkova"
+  },
+  "plugins": [
+    {
+      "name": "state-assumptions",
+      "source": "./mods/state-assumptions"
+    },
+    {
+      "name": "ideas",
+      "source": "./mods/ideas"
+    },
+    {
+      "name": "design-chooser",
+      "source": "./mods/design-chooser"
+    },
+    {
+      "name": "context-gauge",
+      "source": "./mods/context-gauge"
+    },
+    {
+      "name": "cache-keeper",
+      "source": "./mods/cache-keeper"
+    },
+    {
+      "name": "file-tracker",
+      "source": "./mods/file-tracker"
+    },
+    {
+      "name": "agent-watch",
+      "source": "./mods/agent-watch"
+    },
+    {
+      "name": "collision-guard",
+      "source": "./mods/collision-guard"
+    },
+    {
+      "name": "notes-verifier",
+      "source": "./mods/notes-verifier"
+    },
+    {
+      "name": "minimize-panes",
+      "source": "./mods/minimize-panes"
+    },
+    {
+      "name": "prompt-enhancer",
+      "source": "./mods/prompt-enhancer"
+    },
+    {
+      "name": "self-critique",
+      "source": "./mods/self-critique"
+    },
+    {
+      "name": "plan-progress",
+      "source": "./mods/plan-progress"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "agent-watch",
+  "version": "0.3.0",
+  "description": "Un pannello laterale che segue i subagent della sessione: schede attivi e finiti, tipo, modello ed effort, cronometro, token, contesto e le ultime azioni di ciascuno, con dettaglio a scomparsa",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Natalija Zlatkova"
+  }
+}

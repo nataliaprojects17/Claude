@@ -1,0 +1,5 @@
+{
+  "name": "design-chooser",
+  "version": "0.1.0",
+  "description": "When Claude asks for a design direction, shows each option as a mockup in the browser, where you choose, mix or ask for new ones"
+}

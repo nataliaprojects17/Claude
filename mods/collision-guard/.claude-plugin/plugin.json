@@ -1,0 +1,9 @@
+{
+  "name": "collision-guard",
+  "version": "0.1.0",
+  "description": "Avvisa quando un'altra sessione aperta sullo stesso progetto ha gia scritto il file che stai per modificare, e tiene una fascia con quello che le altre stanno facendo.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Natalija Zlatkova"
+  }
+}

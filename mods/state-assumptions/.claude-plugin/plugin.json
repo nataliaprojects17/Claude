@@ -1,0 +1,1 @@
+{ "name": "state-assumptions", "version": "0.7.0", "description": "Asks Claude to list its assumptions and shows them in a band above the prompt where each one can be rejected or changed.", "types": "./types/index.d.ts" }

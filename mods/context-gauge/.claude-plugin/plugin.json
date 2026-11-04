@@ -1,0 +1,6 @@
+{
+  "name": "context-gauge",
+  "version": "0.1.0",
+  "description": "Context fill above the prompt, a warning as it climbs, and a handoff into a fresh session.",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "minimize-panes",
+  "version": "0.1.0",
+  "description": "Adds a minimize button to every pane: the window closes and leaves a button above the prompt that brings it back as it was",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "plan-progress",
+  "version": "0.2.0",
+  "description": "A pane for a multi-step task: the goal, the phase, the checklist, a progress bar and the clock, plus every session's runs and a chime when a turn ends.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "keepWarm": {
+      "type": "boolean",
+      "default": true,
+      "description": "While the session sits idle, send a short prompt so the prompt cache does not go cold. Each one is a real turn and shows in the transcript.",
+      "title": "Keep the cache warm"
+    },
+    "keepWarmMinutes": {
+      "type": "number",
+      "default": 55,
+      "description": "How long the session must be idle before a keep-warm turn is sent. Keep it under the cache TTL in minutes.",
+      "title": "Idle minutes before a keep-warm turn"
+    },
+    "keepWarmText": {
+      "type": "string",
+      "default": "Keep-warm ping. Nothing to do: answer with the single word ok.",
+      "description": "What the keep-warm turn sends.",
+      "title": "Keep-warm prompt"
+    }
+  }
+}

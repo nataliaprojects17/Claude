@@ -1,0 +1,6 @@
+{
+  "name": "self-critique",
+  "version": "0.1.0",
+  "description": "Reviews Claude's last response in a pane: a verdict, what held up, what did not, and a button that sends the fix.",
+  "types": "./types/index.d.ts"
+}

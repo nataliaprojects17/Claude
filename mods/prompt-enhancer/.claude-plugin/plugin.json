@@ -1,0 +1,6 @@
+{
+  "name": "prompt-enhancer",
+  "version": "0.1.0",
+  "description": "Two buttons above the prompt: Enhance rewrites the draft in place with the skills, the project facts, the decisions to settle and what done looks like; Send submits it",
+  "types": "./types/index.d.ts"
+}

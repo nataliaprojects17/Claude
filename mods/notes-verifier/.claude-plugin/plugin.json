@@ -1,0 +1,5 @@
+{
+  "name": "notes-verifier",
+  "version": "0.1.0",
+  "description": "Checks a pasted note claim by claim and reports only the lines that are wrong and the ones it could not check"
+}

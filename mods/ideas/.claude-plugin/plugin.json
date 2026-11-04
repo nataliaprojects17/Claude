@@ -1,0 +1,15 @@
+{
+  "name": "ideas",
+  "version": "0.1.0",
+  "description": "A shelf of ideas per project and branch: park one with /idea without stopping the turn, review and send them to Claude from /ideas",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "reminderDays": {
+      "type": "number",
+      "title": "Remind after days",
+      "description": "Remind about open ideas on the branch parked at least this many days ago (0 turns the reminder off)",
+      "default": 7,
+      "min": 0
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "file-tracker",
+  "version": "0.1.0",
+  "description": "L'inventario dei file toccati che git non mostra, con creato, modificato o cancellato accanto a ognuno.",
+  "types": "./types/index.d.ts"
+}
