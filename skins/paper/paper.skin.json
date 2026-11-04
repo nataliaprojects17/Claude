@@ -1,0 +1,45 @@
+{
+  "custom": {
+    "paper": {
+      "name": "paper",
+      "label": "Paper",
+      "base": "github",
+      "palette": {
+        "user": "#d16b4c",
+        "fg": "#29251c",
+        "muted": "#726c5c",
+        "surface": "#f1e7c6",
+        "zebra": "#f3eacd",
+        "ok": "#4f6b3a",
+        "err": "#a3372c",
+        "warn": "#c2561e",
+        "read": "#2f6b74",
+        "write": "#a3452a",
+        "run": "#8a6a1f",
+        "search": "#7a4a8c",
+        "web": "#3a5e8c",
+        "mcp": "#2f7a5e",
+        "other": "#726c5c"
+      },
+      "spinner": ["Inking", "Drafting", "Pressing", "Typesetting", "Lettering", "Binding"],
+      "done": ["Inked", "Printed", "Bound", "Set"]
+    }
+  },
+  "prefs": {
+    "skin": "paper",
+    "icons": "unicode",
+    "prompt": "left",
+    "words": "skin",
+    "rail": true,
+    "tables": "on",
+    "shimmer": true,
+    "band": false,
+    "markdown": true,
+    "charts": true,
+    "math": true,
+    "highlight": true,
+    "links": true,
+    "fold": true,
+    "compact": true
+  }
+}

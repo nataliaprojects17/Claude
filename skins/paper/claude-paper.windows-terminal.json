@@ -1,0 +1,23 @@
+{
+  "name": "Claude Paper",
+  "background": "#FCF5DD",
+  "foreground": "#29251C",
+  "cursorColor": "#29251C",
+  "selectionBackground": "#E8DFC2",
+  "black": "#29251C",
+  "red": "#A3372C",
+  "green": "#4F6B3A",
+  "yellow": "#8F6A12",
+  "blue": "#3A5E8C",
+  "purple": "#7A4A8C",
+  "cyan": "#37696B",
+  "white": "#55503F",
+  "brightBlack": "#726C5C",
+  "brightRed": "#D16B4C",
+  "brightGreen": "#5F8A45",
+  "brightYellow": "#B5852A",
+  "brightBlue": "#4A74A8",
+  "brightPurple": "#9A5FA8",
+  "brightCyan": "#448487",
+  "brightWhite": "#29251C"
+}

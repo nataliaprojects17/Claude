@@ -1,7 +1,7 @@
 # Claude Code skills and mods
 
-Two writing skills, thirteen mods and a status line for Claude Code, kept here so they can be
-installed on another machine.
+Two writing skills, thirteen mods, a status line and a colour scheme for Claude Code, kept
+here so they can be installed on another machine.
 
 A skill is a set of instructions Claude reads when a task matches it. A mod changes the
 interface itself, drawing panes, bands above the prompt and buttons, through the plugin
@@ -94,3 +94,12 @@ countdown and the two usage windows on the second.
 It does not install from the marketplace, because a status line is a command named in
 `settings.json` rather than a plugin. Copy the script across and point the setting at it, as
 `statusline/README.md` spells out.
+
+## The colours
+
+`skins/paper/` holds Paper, the light scheme in use on this machine. The Windows Terminal
+palette, the skin for the `skins` mod and the one line of `settings.json` that selects it,
+with the order they go in.
+
+The `skins` mod itself is not mine and is not here. It lives in hellosverre's marketplace, and
+`skins/paper/README.md` says how to add it.
