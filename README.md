@@ -43,17 +43,17 @@ cp -r skills/unmask-ai skills/writing-fluent ~/.claude/skills/
 
 ### Installing them
 
-This repository is itself a plugin marketplace called `local-mods`, declared in
+This repository is itself a plugin marketplace called `natalija-mods`, declared in
 `.claude-plugin/marketplace.json` at the root, so Claude Code can add it straight from
 GitHub without a clone.
 
 ```
 /plugin marketplace add nataliaprojects17/Claude
-/plugin install agent-watch@local-mods
+/plugin install agent-watch@natalija-mods
 ```
 
-Install the ones you want one at a time, always with the `@local-mods` suffix. Later
-`/plugin marketplace update local-mods` pulls whatever changed here. After editing a mod,
+Install the ones you want one at a time, always with the `@natalija-mods` suffix. Later
+`/plugin marketplace update natalija-mods` pulls whatever changed here. After editing a mod,
 run `/reload-plugins` to pick the change up without restarting the session.
 
 ### The prompts folder
