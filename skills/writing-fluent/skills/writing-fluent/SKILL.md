@@ -23,8 +23,8 @@ nati.
 1. **REQUIRED:** `humanizer` toglie i tic da AI, cioè le contrapposizioni «non X ma Y», le
    chiusure a effetto, le triadi, i grassetti decorativi, le parole gonfie. Vale in ogni
    lingua.
-2. Quando scrivi in italiano, la sezione A di
-   `~/.claude/skills/unmask-ai/references/italiano.md` copre la punteggiatura sbagliata.
+2. Quando scrivi in italiano, la sezione A di `references/italiano.md` dentro la skill
+   `unmask-ai` copre la punteggiatura sbagliata.
 3. Questa skill decide come stanno insieme i concetti dentro la frase. È il passo che resta
    da fare anche quando la punteggiatura è formalmente corretta.
 

@@ -55,6 +55,14 @@
     {
       "name": "plan-progress",
       "source": "./mods/plan-progress"
+    },
+    {
+      "name": "unmask-ai",
+      "source": "./skills/unmask-ai"
+    },
+    {
+      "name": "writing-fluent",
+      "source": "./skills/writing-fluent"
     }
   ]
 }

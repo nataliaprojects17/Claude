@@ -1,11 +1,35 @@
 # Claude Code skills and mods
 
-Two writing skills and fourteen mods for Claude Code, kept here so they can be installed on
+Two writing skills and thirteen mods for Claude Code, kept here so they can be installed on
 another machine.
 
 A skill is a set of instructions Claude reads when a task matches it. A mod changes the
 interface itself, drawing panes, bands above the prompt and buttons, through the plugin
 hook API.
+
+## Installing
+
+This repository is itself a plugin marketplace called `natalija-mods`, declared in
+`.claude-plugin/marketplace.json` at the root, so Claude Code adds it straight from GitHub
+and nothing needs downloading by hand.
+
+```
+/plugin marketplace add nataliaprojects17/Claude
+/plugin install writing-fluent@natalija-mods
+```
+
+Everything here installs that way, the skills and the mods alike. Install the ones you want
+one at a time, always with the `@natalija-mods` suffix, and they are live in the next
+session. Later `/plugin marketplace update natalija-mods` pulls whatever changed here. After
+editing a mod, run `/reload-plugins` to pick the change up without restarting the session.
+
+A clone on its own does nothing, because Claude Code reads skills from `~/.claude/skills`
+and from a project's `.claude/skills` rather than from any folder on disk. Copy the inner
+folder across if you want a skill installed from a clone instead of from the marketplace.
+
+```sh
+cp -r skills/writing-fluent/skills/writing-fluent ~/.claude/skills/
+```
 
 ## Skills
 
@@ -14,13 +38,15 @@ hook API.
 | `unmask-ai` | Judges how much a text, a document or a slide reads as written by an AI, says where it shows and corrects it. Reads md, txt, docx, pptx, pdf and html, and covers Italian and English. |
 | `writing-fluent` | Rewrites a text so it reads aloud the first time without going back. One concept per sentence, and two only when a conjunction says how they relate. |
 
-They work together because `writing-fluent` calls `humanizer` first, then the Italian
-punctuation reference inside `unmask-ai`.
+They work together because `writing-fluent` reads the Italian punctuation reference inside
+`unmask-ai`, so install both if you write in Italian.
 
-To install them, copy the folders where Claude Code looks for skills.
+`writing-fluent` also calls `humanizer`, which lives in a marketplace of its own and has to
+be added separately.
 
-```sh
-cp -r skills/unmask-ai skills/writing-fluent ~/.claude/skills/
+```
+/plugin marketplace add blader/humanizer
+/plugin install humanizer@humanizer
 ```
 
 ## Mods
@@ -40,21 +66,6 @@ cp -r skills/unmask-ai skills/writing-fluent ~/.claude/skills/
 | `prompt-enhancer` | Two buttons above the prompt. Enhance rewrites the draft in place with the skills, the project facts, the decisions to settle and what done looks like, while Send submits it. |
 | `self-critique` | Reviews Claude's last response in a pane, with a verdict, what held up, what did not, and a button that sends the fix. |
 | `state-assumptions` | Asks Claude to list its assumptions and shows them in a band above the prompt, where each one can be rejected or changed. |
-
-### Installing them
-
-This repository is itself a plugin marketplace called `natalija-mods`, declared in
-`.claude-plugin/marketplace.json` at the root, so Claude Code can add it straight from
-GitHub without a clone.
-
-```
-/plugin marketplace add nataliaprojects17/Claude
-/plugin install agent-watch@natalija-mods
-```
-
-Install the ones you want one at a time, always with the `@natalija-mods` suffix. Later
-`/plugin marketplace update natalija-mods` pulls whatever changed here. After editing a mod,
-run `/reload-plugins` to pick the change up without restarting the session.
 
 ### The prompts folder
 

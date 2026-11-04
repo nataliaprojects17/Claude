@@ -1,0 +1,5 @@
+{
+  "name": "unmask-ai",
+  "version": "0.1.0",
+  "description": "Giudica quanto un testo, un documento o una slide sembra scritto da un'AI, dice dove si vede e lo corregge. Legge md, txt, docx, pptx, pdf e html, e copre italiano e inglese."
+}
