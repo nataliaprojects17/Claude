@@ -1,5 +1,5 @@
 {
   "name": "writing-fluent",
-  "version": "0.1.0",
-  "description": "Riscrive un testo perche si legga ad alta voce la prima volta senza tornare indietro. Un concetto per frase, e due solo quando una congiunzione dice che rapporto hanno."
+  "version": "0.2.0",
+  "description": "Scrive un testo che non suona generato. Un concetto per frase, le parole e la forma da evitare, e il verdetto su un testo gia' scritto, dato da un subagent che non l'ha scritto lui."
 }

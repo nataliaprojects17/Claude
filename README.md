@@ -1,6 +1,6 @@
 # Claude Code skills and mods
 
-Two writing skills, thirteen mods, a status line and a colour scheme for Claude Code, kept
+One skill, thirteen mods, a status line and a colour scheme for Claude Code, kept
 here so they can be installed on another machine.
 
 A skill is a set of instructions Claude reads when a task matches it. A mod changes the
@@ -35,14 +35,12 @@ cp -r skills/writing-fluent/skills/writing-fluent ~/.claude/skills/
 
 | Skill | What it does |
 |---|---|
-| `unmask-ai` | Judges how much a text, a document or a slide reads as written by an AI, says where it shows and corrects it. Reads md, txt, docx, pptx, pdf and html, and covers Italian and English. |
-| `writing-fluent` | Rewrites a text so it reads aloud the first time without going back. One concept per sentence, and two only when a conjunction says how they relate. |
+| `writing-fluent` | Writes a text that does not sound generated. One concept per sentence, the words and the shapes to avoid, and a verdict on a text already written, given by a subagent that did not write it. Reads md, txt, docx, pptx, pdf and html, and covers Italian and English. |
 
-They work together because `writing-fluent` reads the Italian punctuation reference inside
-`unmask-ai`, so install both if you write in Italian.
+`writing-fluent` used to come with `unmask-ai` beside it. The two are one skill now, so
+the judging part, its procedure and the four signal references all live inside it.
 
-`writing-fluent` also calls `humanizer`, which lives in a marketplace of its own and has to
-be added separately.
+On a long English text `humanizer` still helps, and it lives in a marketplace of its own.
 
 ```
 /plugin marketplace add blader/humanizer

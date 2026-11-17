@@ -5,6 +5,10 @@ Una prova basta da sola, perché chi scrive a mano quella cosa non la fa quasi m
 Un indizio conta solo quando ne trovi altri nello stesso punto, perché una persona può
 averlo fatto apposta.
 
+Questo file serve a chi giudica un testo già scritto. La stessa materia detta a chi sta
+scrivendo sta nel `SKILL.md`, cioè la punteggiatura nelle regole da 3 a 5 e il lessico in
+«Parole e formule da non usare». Quando cambia una delle due, l'altra va guardata.
+
 ---
 
 ## A. Punteggiatura

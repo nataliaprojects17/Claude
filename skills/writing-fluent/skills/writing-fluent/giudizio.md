@@ -1,17 +1,4 @@
----
-name: unmask-ai
-description: |
-  Giudica quanto un testo, un documento o una slide sembra scritto da un'AI, dice dove si
-  vede e lo corregge. Usala quando l'utente passa un file (md, txt, docx, pptx, pdf, html)
-  o del testo e chiede un verdetto, chiede se "si capisce che è AI", o vuole che un
-  materiale suoni scritto a mano prima di darlo a un cliente. Copre italiano e inglese, la
-  punteggiatura, la struttura del documento e il lato visivo, cioè grassetti, riquadri,
-  tabelle, emoji, colori. Usala anche prima di scrivere, quando il documento per il cliente
-  non esiste ancora e va fissata la scaletta con i pesi delle sezioni.
-argument-hint: <file o testo> [--scaletta] [--campione <percorso>] [--model sonnet|opus|haiku|fable]
----
-
-# Smaschera AI
+# Giudizio di un testo già scritto
 
 Il giudizio lo dà sempre un subagent, mai tu.
 
@@ -27,35 +14,6 @@ Correggere è un giro a due, e sta nei passi dal 5 al 9. Uno corregge, un altro 
 è perso per strada, e si mettono d'accordo prima che l'originale venga toccato. Una
 riscrittura che toglie i segnali toglie spesso anche le spigolosità, e chi l'ha scritta non
 è la persona giusta per accorgersene.
-
-## Prima di scrivere, la scaletta
-
-Questa parte non giudica niente e non lancia nessun subagent. Serve quando il documento non
-esiste ancora, perché c'è un segnale che dopo non si corregge più.
-
-Le sezioni tutte della stessa lunghezza. Una persona scrive tre paragrafi sulla cosa che le
-ha fatto perdere due giorni e una riga su tutto il resto, e un modello distribuisce uguale
-perché non ha perso due giorni su niente. Quel difetto sta nella forma del documento, non
-nelle frasi, quindi nessuna riscrittura lo sistema. O lo si decide prima, o il documento va
-rifatto.
-
-Prima di scrivere, porta all'utente una scaletta e basta. Niente prosa.
-
-- chi legge, e cosa sa già
-- le sezioni nell'ordine in cui staranno
-- per ognuna, cosa deve lasciare a chi legge, in mezza riga
-- per ognuna, quante righe le dai
-- cosa resta fuori apposta
-
-I pesi devono essere diversi sul serio. Una o due sezioni si prendono il documento, e
-qualcuna si chiude in una riga. Una scaletta dove tutte le sezioni hanno lo stesso budget è
-il difetto di prima, scritto prima.
-
-Di' qual è la sezione che porta il documento, e perché quella. Se non sai dirlo, il
-documento non è ancora pronto per essere scritto, e la domanda giusta all'utente è cosa
-vuole che resti in testa a chi legge.
-
-L'utente approva o sposta i pesi. Si scrive dopo, dentro quei budget.
 
 ## Come si lancia
 
@@ -102,11 +60,15 @@ Giudica quanto questo materiale sembra scritto da un'AI.
 
 Materiale: [percorso assoluto del file, oppure il testo]
 
-Leggi prima questi quattro file, in quest'ordine, e segui la procedura alla lettera.
+Leggi prima questi cinque file, in quest'ordine, e segui la procedura alla lettera.
   [BASE]/procedura.md
   [BASE]/references/italiano.md
+  [BASE]/references/inglese.md
   [BASE]/references/visivo.md
   [BASE]/references/voce.md
+
+Se il materiale è una mail, un messaggio, un messaggio di commit o un post, leggi anche
+[BASE]/contesti.md, perché lì la forma segue altre regole.
 
 Lavori in modo verdetto. Non toccare nessun file. Restituisci i quattro blocchi del
 formato, cioè le due righe del verdetto, il riepilogo per categoria con sotto la
@@ -117,8 +79,8 @@ segnali dal 75% in su. Nient'altro.
  Altrimenti scrivi: Nessun campione, giudica con le regole.]
 ```
 
-`[BASE]` è la cartella di questa skill, quella indicata come base directory quando la skill
-parte.
+`[BASE]` è la cartella di `writing-fluent`, quella indicata come base directory quando la
+skill parte.
 
 ### 4. Riporta e chiedi
 
@@ -274,7 +236,7 @@ Se il file non esiste o il percorso è sbagliato, dillo e fermati. Non indovinar
 intendeva.
 
 Se l'utente chiede una cosa che non è un giudizio, per esempio «cosa dice questo documento»,
-non sei la skill giusta. Rispondi senza subagent.
+qui non c'è niente da lanciare. Rispondi senza subagent.
 
 La scaletta non lancia niente neanche lei. È una cosa che fai tu, parlando con l'utente, e
-finisce quando lui approva i pesi.
+finisce quando lui approva i pesi. Sta in `SKILL.md`.

@@ -1,4 +1,4 @@
-# Smaschera AI, la procedura
+# La procedura del giudizio
 
 Dai un verdetto su quanto un materiale sembra generato, di' dove si vede, e offri di
 correggerlo. Tutto quello che ti serve sta in questo file e nei due riferimenti qui
@@ -67,6 +67,7 @@ così chi ti ha lanciato sa che può dartene uno al giro dopo.
 Leggi tutto una volta, poi segna ogni segnale con la posizione e la citazione esatta.
 
 - `references/italiano.md` per punteggiatura, lessico e struttura
+- `references/inglese.md` per il lessico e le frasi fatte quando il testo è in inglese
 - `references/visivo.md` per grassetti, riquadri, tabelle, emoji, colori, slide
 - `references/voce.md` per quello che manca, che si legge a parte e non entra nel «sa di AI»
 
